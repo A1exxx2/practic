@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;400&family=Open+Sans:wght@300&display=swap');
+$black: black;
+$main: #4c514a;
+$buttons: #002F55;
+$head: #253A58;
+$font-main: 'Montserrat', sans-serif;
+$font-text: 'Open Sans', sans-serif;
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+p{
+    font-family: $font-text;
+    color: $black;
+}
+a{
+text-decoration: none;
+list-style: none;
+color: $head;
+}
+.main-menu{
+font-family: $font-main;
+font-size: 20px;
+padding: 10px;
+&_glav{
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    max-width: 92%;
+}
+&_menu-item{
+    margin-right: 8%;
+    display: inline;
+    width: 40%;
+    margin-left: 5%;
+}
+&_logo{
+    display: inline;
+}
+}
+.main-image{
+padding: 0;
+}
+.block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &_img{
+        max-width: 50%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    & p{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+        text-align: justify;
+    }
+    &_image{
+        width: 90%;
+        height: 90%;
+    }
+}
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: $main;
+}
+.foot{
+    display: flex;
+    text-align: center;
+    margin-top: 2%;
+    padding: 2%;
+   & p{
+    font-family: $font-main;
+    font-size: 12px;
+    color: white;
+   } 
+   &_img{
+    margin-right: 40%;
+   }
+
+}
+.tovar{
+
+&_img{
+    width: 400px;
+    height: 400px;
+}
+&_li
+{
+    margin: 2% 5%;
+    display: inline-block;
+}
+&_p {
+    font-size: 20px;
+    font-family: $font-main;
+    text-align: center;
+}
+&_button{
+    background-color: $buttons;
+    color: white;
+    font-family: $main;
+    width: 105px;
+    height: 28px;
+    border-radius: 0.5em;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+}
+.new{
+    display: contents;
+    text-align: left;
+    margin-bottom: 2%;
+    &_h{
+        margin-left: 5%;
+        font-weight: bold;
+        font-family: $font-main;
+        font-size: 35px;
+        margin-top: 1%;
+    }
+    &_p{
+        margin-left: 5%;
+        max-width: 90%;
+        font-size: 20px;
+        margin-top: 2%;
+    }
+}
+.kontakt{
+    display: flex;
+   text-align: center;
+    &_info{
+        justify-content: center;
+        align-items:center;
+    }
+    &_map{
+        align-items: center;
+        max-width: 100%;
+    }
+    & p{
+        font-size: 20px;
+    }
+}
+.but{
+    display: flex;
+    
+}
+.scroll{
+    font-family: $font-main;
+    background-color: $buttons;
+    border-radius: 5cm;
+    color: white;
+}
+@media (min-width: 768px) and (max-width: 1400px){
+    .main-menu{
+        font-family: $font-main;
+        font-size: 20px;
+        padding: 10px;
+        &_glav{
+            padding: 5px;
+            align-items: center;
+            display: flex;
+            max-width: 25%;
+        }
+        &_menu-item{
+            margin-right: 8%;
+            display: inline;
+            width: 40%;
+            margin-left: 5%;
+        }
+        &_logo{
+            display: inline;
+        }
+        }
+    .block{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &_img{
+            max-width: 40%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        & p{
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 18px;
+            text-align: justify;
+        }
+        &_image{
+            width: 90%;
+            max-height: 30%;
+        }
+    }
+    .kontakt{
+        display: flex;
+        margin-top: 8%;
+        &_map{
+            max-width: 50%;
+            margin-left: 5%;
+        }
+        & p{
+            font-size: 20px;
+        }
+    }
+}
